@@ -25,10 +25,16 @@ class Router extends Config
         $config = $di->get('config');
         $config = $config->getConfig();
 
+
+
         $di->params['Modus\Router\Standard'] = [
             'router' => $di->lazyNew('Aura\Router\Router'),
             'routes' => require($config['root_path'] . '/config/routes.php'),
             'serverVars' => $_SERVER,
+            'routeAuthServices' => [
+                'default' => $di->newInstance('Modus\Auth\Router\Standard'),
+            ]
         ];
+
     }
 }

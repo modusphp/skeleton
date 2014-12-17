@@ -122,5 +122,9 @@ class Auth extends Di\Config
         $di->params['Aura\Auth\Verifier\PasswordVerifier'] = array(
             'algo' => 'NO_ALGO_SPECIFIED',
         );
+
+        $di->params['Modus\Auth\Router\Standard'] = [
+            'authService' => $di->lazyNew('Modus\Auth\Service')
+        ];
     }
 }

@@ -906,12 +906,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "1cb39eedb5949989df860441e3b0bd3bcf0c2a0e"
+                "reference": "5bee6fe56c2e8d1fc22b5188d49b6a2500df065f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1cb39eedb5949989df860441e3b0bd3bcf0c2a0e",
-                "reference": "1cb39eedb5949989df860441e3b0bd3bcf0c2a0e",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5bee6fe56c2e8d1fc22b5188d49b6a2500df065f",
+                "reference": "5bee6fe56c2e8d1fc22b5188d49b6a2500df065f",
                 "shasum": ""
             },
             "require": {
@@ -970,7 +970,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-12-13 13:54:24"
+            "time": "2014-12-17 10:47:08"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -1141,19 +1141,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ClassLoader.git",
-                "reference": "6a101b70efa47f6b0ce40022b6093ac9e7b8f187"
+                "reference": "298748bc5dc6cec629b956918b1553b6cd1f2c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/6a101b70efa47f6b0ce40022b6093ac9e7b8f187",
-                "reference": "6a101b70efa47f6b0ce40022b6093ac9e7b8f187",
+                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/298748bc5dc6cec629b956918b1553b6cd1f2c9e",
+                "reference": "298748bc5dc6cec629b956918b1553b6cd1f2c9e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/finder": "~2.0"
+                "symfony/finder": "~2.0,>=2.0.5"
             },
             "type": "library",
             "extra": {
@@ -1182,7 +1182,7 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "http://symfony.com",
-            "time": "2014-12-08 08:43:24"
+            "time": "2014-12-16 15:44:55"
         },
         {
             "name": "symfony/config",
@@ -1389,12 +1389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tailwindsllc/modus.git",
-                "reference": "537c9c13889bdefa7d05b77768077c430131e98e"
+                "reference": "ebf573752f17cb692bee4e54b1eefdf9cd6db867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tailwindsllc/modus/zipball/537c9c13889bdefa7d05b77768077c430131e98e",
-                "reference": "537c9c13889bdefa7d05b77768077c430131e98e",
+                "url": "https://api.github.com/repos/tailwindsllc/modus/zipball/ebf573752f17cb692bee4e54b1eefdf9cd6db867",
+                "reference": "ebf573752f17cb692bee4e54b1eefdf9cd6db867",
                 "shasum": ""
             },
             "require": {
@@ -1441,7 +1441,7 @@
                 "MIT"
             ],
             "description": "The Modus framework, providing basic support for many components of Aura and other libraries.",
-            "time": "2014-12-14 16:10:31"
+            "time": "2014-12-17 19:18:57"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -1900,12 +1900,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8da607e5bbcd355ab8b173d4398bd1dd6f688f2f"
+                "reference": "827d10a1638bd573dbd5fb1bed9ddc397855c850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8da607e5bbcd355ab8b173d4398bd1dd6f688f2f",
-                "reference": "8da607e5bbcd355ab8b173d4398bd1dd6f688f2f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/827d10a1638bd573dbd5fb1bed9ddc397855c850",
+                "reference": "827d10a1638bd573dbd5fb1bed9ddc397855c850",
                 "shasum": ""
             },
             "require": {
@@ -1964,7 +1964,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-12-08 09:42:37"
+            "time": "2014-12-17 06:19:52"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2143,12 +2143,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "6e6c71d918088c251b181ba8b3088af4ac336dd7"
+                "reference": "a4420fdad8ef5e525cdeb66adbb5ed9e873e6128"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/6e6c71d918088c251b181ba8b3088af4ac336dd7",
-                "reference": "6e6c71d918088c251b181ba8b3088af4ac336dd7",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/a4420fdad8ef5e525cdeb66adbb5ed9e873e6128",
+                "reference": "a4420fdad8ef5e525cdeb66adbb5ed9e873e6128",
                 "shasum": ""
             },
             "require": {
@@ -2185,7 +2185,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2014-10-25 08:00:45"
+            "time": "2014-12-15 10:20:32"
         },
         {
             "name": "sebastian/exporter",
