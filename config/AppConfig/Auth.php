@@ -15,11 +15,14 @@ class Auth extends Di\Config
 
     public function define(Di\Container $di)
     {
+        $config = $di->get('config')->getConfig();
+
         /**
          * Services
          */
 
-        $di->set('aura/auth:adapter', $di->lazyNew('Aura\Auth\Adapter\HtpasswdAdapter'));
+        // This is the adapter we need
+        $di->set('aura/auth:adapter', $di->lazyNew($config['authentication_adapter']));
 
         $di->set('aura/auth:auth', $di->lazyNew('Aura\Auth\Auth'));
         $di->set('aura/auth:login_service', $di->lazyNew('Aura\Auth\Service\LoginService'));
@@ -34,37 +37,6 @@ class Auth extends Di\Config
             'resumeService' => $di->lazyGet('aura/auth:resume_service'),
             'userObj' => $di->lazyGet('aura/auth:auth'),
         ];
-
-        /**
-         * Aura\Auth\Adapter\HtpasswdAdapter
-         */
-        $di->params['Aura\Auth\Adapter\HtpasswdAdapter'] = array(
-            'file' => '/Users/brandon/Sites/modus/public/passwd',
-            'verifier' => $di->lazyNew('Aura\Auth\Verifier\HtpasswdVerifier'),
-        );
-
-        /**
-         * Aura\Auth\Adapter\ImapAdapter
-         */
-        $di->params['Aura\Auth\Adapter\ImapAdapter'] = array(
-            'phpfunc' => $di->lazyNew('Aura\Auth\Phpfunc'),
-        );
-
-        /**
-         * Aura\Auth\Adapter\LdapAdapter
-         */
-        $di->params['Aura\Auth\Adapter\LdapAdapter'] = array(
-            'phpfunc' => $di->lazyNew('Aura\Auth\Phpfunc'),
-        );
-
-        /**
-         * Aura\Auth\Adapter\PdoAdapter
-         */
-        $di->params['Aura\Auth\Adapter\PdoAdapter'] = array(
-            'verifier' => $di->lazyNew('Aura\Auth\Verifier\PasswordVerifier'),
-            'from' => 'users',
-            'cols' => array('username', 'password'),
-        );
 
         /**
          * Aura\Auth\Auth
@@ -126,5 +98,20 @@ class Auth extends Di\Config
         $di->params['Modus\Auth\Router\Standard'] = [
             'authService' => $di->lazyNew('Modus\Auth\Service')
         ];
+
+        /**
+         * Configure adapter from config
+         */
+
+        $params = [];
+        foreach ($config['authentication_settings'] as $key => $argument) {
+            if(class_exists($argument)) {
+                $params[$key] = $di->lazyNew($argument);
+            } else {
+                $params[$key] = $argument;
+            }
+        }
+
+        $di->params[$config['authentication_adapter']] = $params;
     }
 }

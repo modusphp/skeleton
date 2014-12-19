@@ -139,5 +139,14 @@ return array(
         'AppConfig\ADR\Domain',
     ],
 
-
+    /*
+     * --------------------------------------------------
+     * Authentication Settings
+     * --------------------------------------------------
+     */
+    'authentication_adapter' => 'Aura\Auth\Adapter\HtpasswdAdapter',
+    'authentication_settings' => [
+        'file' => '',
+        'verifier' => 'Aura\Auth\Verifier\HtpasswdVerifier'
+    ]
 );
