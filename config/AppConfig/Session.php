@@ -48,7 +48,7 @@ class Session extends Di\Config
             'session' => $di->lazyGet('session_manager'),
         ];
 
-        $di->params['Modus\Session\Aura'] = [
+        $di->params['Modus\Session\Session'] = [
             'manager' => $di->lazyNew('Aura\Session\Manager'),
             'defaultSegment' => $config['default_session_segment'],
         ];

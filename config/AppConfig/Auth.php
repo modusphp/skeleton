@@ -95,7 +95,7 @@ class Auth extends Di\Config
             'algo' => 'NO_ALGO_SPECIFIED',
         );
 
-        $di->params['Modus\Auth\Router\Standard'] = [
+        $di->params['Modus\Auth\Router\StandardAuth'] = [
             'authService' => $di->lazyNew('Modus\Auth\Service')
         ];
 

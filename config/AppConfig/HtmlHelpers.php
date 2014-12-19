@@ -42,7 +42,7 @@ class HtmlHelpers extends Di\Config
          * Session Flash Messages
          */
         $di->params['Modus\Template\Helper\Messages'] = [
-            'session' => $di->lazyNew('Modus\Session\Aura'),
+            'session' => $di->lazyNew('Modus\Session\Session'),
         ];
 
         /**
@@ -56,7 +56,7 @@ class HtmlHelpers extends Di\Config
          * Link Generator
          */
         $di->params['Modus\Template\Helper\LinkGenerator'] = [
-            'standardRouter' => $di->lazyNew('Modus\Router\Standard'),
+            'standardRouter' => $di->lazyNew('Modus\Router\RouteManager'),
         ];
 
         /**
