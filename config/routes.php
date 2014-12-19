@@ -4,34 +4,43 @@
  *
  * Example:
  *
- * "some_route" => [
- *          "path" => "/a/b/{c}{format}",
- *          "values" => [
+ * 'some_route' => [
+ *          'path' => '/a/b/{c}{format}',
+ *          'values' => [
  *              'action' => 'Application\Controller\Index',
  *              'responder' => 'Application\Responder\Index',
  *              'method' => 'index',
- *              "format" => 'html' // a default param value for format
+ *              'format' => 'html' // a default param value for format
  *      ],
- *      "params" => ['c' => '\d+', 'format' => '(\.[^/]+)?',],
- *      "secure" => false,
- *      "request" => "GET|POST"
+ *      'params' => ['c' => '\d+', 'format' => '(\.[^/]+)?',],
+ *      'secure' => false,
+ *      'request' => 'GET|POST'
  * ],
  **/
 return array(
 
-    "some_route" => [
-        "path" => "/a/b/{c}{format}",
-        "values" => [
-            'action' => 'Application\Controller\Index',
-            'responder' => 'Application\Responder\Index',
-            'method' => 'index',
-            "format" => 'html' // a default param value for format
-        ],
-        "params" => ['c' => '\d+', 'format' => '(\.[^/]+)?',],
-        "secure" => false,
-        "request" => "GET|POST"
+    'metadata' => [
+        'redirect_routes' => [
+            'default' => 'login',
+        ]
     ],
 
-    "route_groups" => [
-    ]
+    'routes' => [
+        'some_route' => [
+            'path' => '/a/b/{c}{format}',
+            'values' => [
+                'action' => 'Application\Controller\Index',
+                'responder' => 'Application\Responder\Index',
+                'method' => 'index',
+                'format' => 'html' // a default param value for format
+            ],
+            'params' => ['c' => '\d+', 'format' => '(\.[^/]+)?',],
+            'secure' => false,
+            'request' => 'GET|POST'
+        ],
+    ],
+
+
+    'route_groups' => [
+    ],
 );
