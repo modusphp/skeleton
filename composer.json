@@ -14,5 +14,11 @@
             "name": "Brandon Savage",
             "email": "brandon@brandonsavage.net"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": {
+            "Application": "local-src/",
+            "AppConfig": "config/"
+        }
+    }
 }
