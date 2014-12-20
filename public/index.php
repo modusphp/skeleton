@@ -3,7 +3,7 @@
 require_once('../vendor/autoload.php');
 
 $builder = new Aura\Di\ContainerBuilder();
-$environment = (isset($_SERVER['MODUS_ENV'])) ? $_SERVER['MODUS_ENV'] : 'production';
+$environment = (isset($_SERVER['MODUS_ENV'])) ? $_SERVER['MODUS_ENV'] : 'dev';
 $config = new Modus\Config\Config($environment, realpath('../config'), $builder);
 
 
