@@ -10,12 +10,15 @@ return array(
      * --------------------------------------------------
      */
     "environment" => $env,
+
     /*
      * --------------------------------------------------
      * Default Root Path
      * --------------------------------------------------
      */
+
     "root_path" => $rootPath,
+
     /*
      * --------------------------------------------------
      * Database Configuration
@@ -44,6 +47,7 @@ return array(
             ],
         ]
     ],
+
     /*
      * --------------------------------------------------
      * Error statuses and the responders to use.
@@ -54,6 +58,7 @@ return array(
         '404' => 'Some\Namespace\Responder\Page404',
         '406' => 'Some\Namespace\Responder\Page406',
     ],
+
     /*
      * --------------------------------------------------
      * Template Directory and Layout
@@ -63,6 +68,7 @@ return array(
         "layout" => "$rootPath/views/",
         "views" => "$rootPath/views/",
     ],
+
     /*
      * --------------------------------------------------
      * Default Session Configuration
