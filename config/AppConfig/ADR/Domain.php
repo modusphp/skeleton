@@ -19,10 +19,12 @@ class Domain extends Di\Config
         /**
          * This is the basic configuration for the base database model.
          */
-        $di->params['Modus\Common\Model\Storage\Database'] = array(
-            'locator' => $di->lazyNew('Aura\Sql\ConnectionLocator'),
-            'queryFactory' => $di->lazyNew('Aura\SqlQuery\QueryFactory'),
-        );
+        $di->setter['Modus\Common\Model\Storage\Database']['setConnectionLocator'] =
+            $di->lazyNew('Aura\Sql\ConnectionLocator');
+
+        $di->setter['Modus\Common\Model\Storage\Database']['setQueryFactory'] =
+            $di->lazyNew('Aura\SqlQuery\QueryFactory');
+
         /**
          * Configure your model-specific arguments here.
          */
