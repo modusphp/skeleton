@@ -132,11 +132,11 @@ return array(
      * --------------------------------------------------
      */
     'config_classes' => [
+        'AppConfig\Auth',
         'AppConfig\Bootstrap',
         'AppConfig\Router',
         'AppConfig\Database',
         'AppConfig\AuraWeb',
-        'AppConfig\Auth',
         'AppConfig\HtmlHelpers',
         'AppConfig\Session',
         'AppConfig\ErrorHandler',
