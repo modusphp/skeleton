@@ -60,6 +60,13 @@ class HtmlHelpers extends Di\Config
         ];
 
         /**
+         * Auth Checker
+         */
+        $di->params['Modus\Template\Helper\AuthChecker'] = [
+            'user' => $di->lazyNew('Aura\Auth\Auth')
+        ];
+
+        /**
          * Aura\Html\Helper\Input
          */
         $di->params['Aura\Html\Helper\Input']['map'] = array(
