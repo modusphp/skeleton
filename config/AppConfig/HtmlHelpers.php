@@ -23,6 +23,7 @@ class HtmlHelpers extends Di\Config
             'base' => $di->lazyNew('Aura\Html\Helper\Base'),
             'escape' => $di->LazyNew('Aura\Html\Escaper'),
             'form' => $di->lazyNew('Aura\Html\Helper\Form'),
+            'html' => $di->lazyNew('Aura\Html\Escaper\HtmlEscaper'),
             'img' => $di->lazyNew('Aura\Html\Helper\Img'),
             'image' => $di->lazyNew('Aura\Html\Helper\Img'),
             'input' => $di->lazyNew('Aura\Html\Helper\Input'),
