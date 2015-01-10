@@ -1,5 +1,3 @@
 .idea/
-# Yes, we want to remove this, on purpose
-composer.lock
 *.phar
 vendor/

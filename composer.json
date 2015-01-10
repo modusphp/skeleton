@@ -3,10 +3,11 @@
     "description": "A skeleton project for the Modus framework.",
     "minimum-stability": "beta",
     "require": {
-    "tailwindsllc/modus": "4.0-beta1"
+        "tailwindsllc/modus": "~4.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.4"
+        "phpunit/phpunit": "~4.4",
+        "symfony/var-dumper": "2.6.3"
     },
     "license": "MIT",
     "authors": [
@@ -17,7 +18,6 @@
     ],
     "autoload": {
         "psr-0": {
-            "Application": "local-src/",
             "AppConfig": "config/"
         }
     }
