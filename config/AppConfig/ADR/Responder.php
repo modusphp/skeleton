@@ -19,10 +19,17 @@ class Responder extends Di\Config
         /**
          * Basic configuration for base responder.
          */
+
+        // A map of helpers,
+        $map = [
+            'linkgenerator' => $di->lazyNew('Modus\Template\Helper\LinkGenerator'),
+        ];
+
         $di->params['Modus\Responder\Web'] = [
             'response' => $di->lazyNew('Aura\Web\Response'),
             'template' => $di->lazyNew('Aura\View\View'),
             'contentNegotiation' => $di->lazyNew('Aura\Accept\Accept'),
+            'locator' => $di->lazyNew('Aura\Html\HelperLocator', ['map' => $map]),
         ];
 
         $config = $di->get('config')->getConfig();
