@@ -6,7 +6,6 @@ $builder = new Aura\Di\ContainerBuilder();
 $environment = (isset($_SERVER['MODUS_ENV'])) ? $_SERVER['MODUS_ENV'] : 'dev';
 $config = new Modus\Config\Config($environment, realpath('../config'), $builder);
 
-
 $di = $config->getContainer();
 $framework = $di->newInstance('Modus\Application\Bootstrap');
 $framework->execute();

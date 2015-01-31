@@ -20,6 +20,9 @@
     "autoload": {
         "psr-0": {
             "AppConfig": "config/"
+        },
+        "psr-4": {
+            "Example\\": "src/"
         }
     }
 }
