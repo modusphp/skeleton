@@ -83,8 +83,8 @@ class Database extends Config
          */
         $di->params['Aura\Sql\ConnectionLocator'] = [
             'default' => $databaseConnections['default'],
-            'read' => $databaseConnections['write'],
-            'write' => $databaseConnections['read'],
+            'read' => $databaseConnections['read'],
+            'write' => $databaseConnections['write'],
         ];
 
         $di->params['Aura\SqlQuery\QueryFactory'] = [
