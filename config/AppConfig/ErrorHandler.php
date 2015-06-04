@@ -19,7 +19,7 @@ class ErrorHandler extends Config
 
 
         $di->params['Modus\ErrorLogging\Manager'] = [
-            'runner' => $di->lazyNew('Savage\BooBoo\Runner'),
+            'runner' => $di->lazyNew('League\BooBoo\Runner'),
             'accept' => $di->lazyNew('Aura\Accept\Accept'),
             'loggers' => ['error' => $di->get('error'), 'event' => $di->get('event')],
             'availableFormatters' => $this->formatters,
@@ -52,7 +52,7 @@ class ErrorHandler extends Config
     protected function configureBooBoo($config, Container $di) {
 
         // We want to use the log handler for BooBoo.
-        $handlers = [$di->newInstance('Savage\BooBoo\Handler\LogHandler', ['logger' => $di->get('error')])];
+        $handlers = [$di->newInstance('League\BooBoo\Handler\LogHandler', ['logger' => $di->get('error')])];
 
         // Configure the BooBoo formatters.
         $this->formatters = [];
@@ -63,13 +63,13 @@ class ErrorHandler extends Config
         $default[] = $di->newInstance($config['default_formatter']);
 
         // Set up the BooBoo configuration parameters.
-        $di->params['Savage\BooBoo\Runner'] = [
+        $di->params['League\BooBoo\Runner'] = [
             'formatters' => $default,
             'handlers' => $handlers,
         ];
 
         if(isset($config['error_page_formatter'])) {
-            $di->setter['Savage\BooBoo\Runner']['setErrorPageFormatter'] =
+            $di->setter['League\BooBoo\Runner']['setErrorPageFormatter'] =
                 $di->lazyNew($config['error_page_formatter']);
         }
 
@@ -78,7 +78,7 @@ class ErrorHandler extends Config
         }
 
         if($config['silence_errors']) {
-            $di->setter['Savage\BooBoo\Runner']['silenceAllErrors'] = true;
+            $di->setter['League\BooBoo\Runner']['silenceAllErrors'] = true;
         }
     }
 }

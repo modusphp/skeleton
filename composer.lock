@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1217824a9890cc2edf49e7183f9ca503",
+    "hash": "f3a7eba9bf31c8da5c391d8b742bdc1a",
     "packages": [
         {
             "name": "aura/accept",
@@ -379,6 +379,91 @@
             "time": "2012-11-26 21:35:57"
         },
         {
+            "name": "aura/payload",
+            "version": "3.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Payload.git",
+                "reference": "f7800db0da3f5b3e22fc57188f2c984bd6e66cf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Payload/zipball/f7800db0da3f5b3e22fc57188f2c984bd6e66cf4",
+                "reference": "f7800db0da3f5b3e22fc57188f2c984bd6e66cf4",
+                "shasum": ""
+            },
+            "require": {
+                "aura/payload-interface": "3.x-dev",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Payload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Payload Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Payload/contributors"
+                }
+            ],
+            "description": "A Domain Payload implementation.",
+            "homepage": "https://github.com/auraphp/Aura.Payload",
+            "keywords": [
+                "ddd",
+                "domain",
+                "payload"
+            ],
+            "time": "2015-05-18 14:25:57"
+        },
+        {
+            "name": "aura/payload-interface",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Payload_Interface.git",
+                "reference": "fb72bf457a4321e8c3f8917ab6c553c82c42f2d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Payload_Interface/zipball/fb72bf457a4321e8c3f8917ab6c553c82c42f2d1",
+                "reference": "fb72bf457a4321e8c3f8917ab6c553c82c42f2d1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Payload_Interface\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Payload_Interface Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Payload_Interface/contributors"
+                }
+            ],
+            "description": "An interface package for Domain Payload implementations.",
+            "homepage": "https://github.com/auraphp/Aura.Payload_Interface",
+            "keywords": [
+                "ddd",
+                "domain",
+                "payload"
+            ],
+            "time": "2015-06-03 19:29:15"
+        },
+        {
             "name": "aura/router",
             "version": "2.x-dev",
             "source": {
@@ -724,51 +809,6 @@
             "time": "2015-04-04 16:00:33"
         },
         {
-            "name": "brandonsavage/booboo",
-            "version": "0.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/brandonsavage/booboo.git",
-                "reference": "948623ab3b4dd9eb1a56a597d00e3678cc17c4ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/brandonsavage/booboo/zipball/948623ab3b4dd9eb1a56a597d00e3678cc17c4ef",
-                "reference": "948623ab3b4dd9eb1a56a597d00e3678cc17c4ef",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "psr/log": "~1.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.3",
-                "raven/raven": "0.10.0"
-            },
-            "suggest": {
-                "raven/raven": "Use Raven for passing errors to Sentry."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Savage\\BooBoo\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brandon Savage",
-                    "homepage": "https://www.brandonsavage.net/"
-                }
-            ],
-            "description": "Provides an error handler for PHP that can execute a stack of handlers for various purposes.",
-            "time": "2015-01-31 13:49:57"
-        },
-        {
             "name": "ircmaxell/password-compat",
             "version": "1.0.x-dev",
             "source": {
@@ -809,6 +849,51 @@
                 "password"
             ],
             "time": "2014-11-20 19:18:42"
+        },
+        {
+            "name": "league/booboo",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/booboo.git",
+                "reference": "50008c980c5f710599705cb6758723588e875133"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/booboo/zipball/50008c980c5f710599705cb6758723588e875133",
+                "reference": "50008c980c5f710599705cb6758723588e875133",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.3",
+                "raven/raven": "0.10.0"
+            },
+            "suggest": {
+                "raven/raven": "Use Raven for passing errors to Sentry."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\BooBoo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Savage",
+                    "homepage": "https://www.brandonsavage.net/"
+                }
+            ],
+            "description": "Provides an error handler for PHP that can execute a stack of handlers for various purposes.",
+            "time": "2015-02-25 19:12:30"
         },
         {
             "name": "league/flysystem",
@@ -1396,16 +1481,16 @@
         },
         {
             "name": "tailwindsllc/modus",
-            "version": "4.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tailwindsllc/modus.git",
-                "reference": "d4d79878a89f8236e7960de58403ccae183e9d3d"
+                "reference": "96351432c4b9b247089b8ca5252fd856e1023457"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tailwindsllc/modus/zipball/d4d79878a89f8236e7960de58403ccae183e9d3d",
-                "reference": "d4d79878a89f8236e7960de58403ccae183e9d3d",
+                "url": "https://api.github.com/repos/tailwindsllc/modus/zipball/96351432c4b9b247089b8ca5252fd856e1023457",
+                "reference": "96351432c4b9b247089b8ca5252fd856e1023457",
                 "shasum": ""
             },
             "require": {
@@ -1415,18 +1500,19 @@
                 "aura/di": "~2.1",
                 "aura/html": "~2.1.0",
                 "aura/http": "~1.0.1",
+                "aura/payload": "3.0.0-alpha1",
                 "aura/router": "~2.0",
                 "aura/session": "~1.0.1",
                 "aura/sql": "~2.0",
                 "aura/sqlquery": "~2.0",
                 "aura/view": "~2.0.0",
                 "aura/web": "~2.0",
-                "brandonsavage/booboo": "~0.4",
                 "ircmaxell/password-compat": "~1.0",
+                "league/booboo": "~1.0",
                 "league/flysystem": "~0.5",
                 "monolog/monolog": "~1.5",
                 "pagerfanta/pagerfanta": "v1.0.1",
-                "php": ">=5.4.0",
+                "php": ">=5.5.0",
                 "robmorgan/phinx": "v0.3.2",
                 "zendframework/zend-escaper": "~2.2"
             },
@@ -1445,7 +1531,7 @@
                 "MIT"
             ],
             "description": "The Modus framework, providing basic support for many components of Aura and other libraries.",
-            "time": "2015-02-09 22:43:54"
+            "time": "2015-06-04 20:32:41"
         },
         {
             "name": "zendframework/zend-escaper",

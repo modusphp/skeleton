@@ -118,12 +118,12 @@ return array(
      */
     'use_booboo' => true,
     'silence_errors' => false,
-    'default_formatter' => 'Savage\BooBoo\Formatter\HtmlTableFormatter',
-    'error_page_formatter' => 'Savage\BooBoo\Formatter\HtmlTableFormatter',
+    'default_formatter' => 'League\BooBoo\Formatter\HtmlTableFormatter',
+    'error_page_formatter' => 'League\BooBoo\Formatter\HtmlTableFormatter',
     'formatter_accepts' => [
-        'text/html' => 'Savage\BooBoo\Formatter\HtmlTableFormatter',
-        'text/text' => 'Savage\BooBoo\Formatter\CommandLineFormatter',
-        'application/json' => 'Savage\BooBoo\Formatter\JsonFormatter',
+        'text/html' => 'League\BooBoo\Formatter\HtmlTableFormatter',
+        'text/text' => 'League\BooBoo\Formatter\CommandLineFormatter',
+        'application/json' => 'League\BooBoo\Formatter\JsonFormatter',
     ],
 
     /*

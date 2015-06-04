@@ -2,10 +2,15 @@
 
 namespace Example\Action;
 
+use Aura\Payload\Payload;
+
 class Index
 {
     public function index()
     {
-        return ['statement' => 'Modus Framework'];
+        $payload = new Payload();
+        $payload->setOutput(['statement' => 'Modus Framework']);
+        return $payload;
+
     }
 }
