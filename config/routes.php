@@ -28,7 +28,7 @@ return array(
             'path' => '/',
             'values' => [
                 'action' => 'Example\Action\Index:index',
-                'responder' => 'Example\Responder\Index:process',
+                'responder' => 'Example\Responder\Index',
             ],
             'request' => 'GET'
         ],

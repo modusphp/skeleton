@@ -25,13 +25,6 @@ class Responder extends Di\Config
             'linkgenerator' => $di->lazyNew('Modus\Template\Helper\LinkGenerator'),
         ];
 
-        $di->params['Modus\Responder\Web'] = [
-            'response' => $di->lazyNew('Aura\Web\Response'),
-            'template' => $di->lazyNew('Aura\View\View'),
-            'contentNegotiation' => $di->lazyNew('Aura\Accept\Accept'),
-            'locator' => $di->lazyNew('Aura\Html\HelperLocator', ['map' => $map]),
-        ];
-
         $config = $di->get('config')->getConfig();
         $registry = require($config['root_path'] . '/config/view_registry.php');
 
@@ -57,5 +50,25 @@ class Responder extends Di\Config
             'value_factory' => $di->lazyNew('Aura\Accept\ValueFactory'),
             'server' => $_SERVER,
         );
+
+        $di->params['Modus\Response\ResponseManager'] = [
+            'httpResponse' => $di->lazyNew('Modus\Response\HttpResponse'),
+            'contentNegotiation' => $di->lazyNew('Aura\Accept\Accept'),
+        ];
+
+        $di->params['Modus\Response\Response'] = [
+            'response' => $di->lazyNew('Aura\Web\Response'),
+        ];
+
+        /**
+         * Configuration of each individual responder.
+         */
+
+        $di->params['Example\Responder\Index'] = [
+            'response' => $di->lazyNew('Modus\Response\Response'),
+            'template' => $di->lazyNew('Aura\View\View'),
+        ];
+
+
     }
 }

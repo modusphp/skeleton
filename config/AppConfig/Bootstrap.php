@@ -19,6 +19,7 @@ class Bootstrap extends Di\Config
             'authService' => $di->lazyNew('Modus\Auth\Service'),
             'router' => $di->lazyNew('Modus\Router\RouteManager'),
             'handler' => $di->lazyNew('Modus\ErrorLogging\Manager'),
+            'responseManager' => $di->lazyNew('Modus\Response\ResponseManager'),
         );
     }
 }
