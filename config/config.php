@@ -9,7 +9,7 @@ return array(
      * What environment are we in?
      * --------------------------------------------------
      */
-    "environment" => $env,
+    "environment" => $_ENV['MODUS_ENV'],
 
     /*
      * --------------------------------------------------
