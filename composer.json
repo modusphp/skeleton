@@ -3,11 +3,10 @@
     "description": "A skeleton project for the Modus framework.",
     "minimum-stability": "dev",
     "require": {
-        "modus/framework": "dev-master",
-        "modus/config": "~1.0"
+        "modus/framework": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.4",
+        "phpunit/phpunit": "4.4",
         "mockery/mockery": "0.9.3",
         "symfony/var-dumper": "2.6.3"
     },
