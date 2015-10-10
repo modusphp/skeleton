@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7d3817ae58ba24fda79ba28c8c3e723e",
+    "hash": "8242ba7a99595b312ec0b8c2b239936b",
     "packages": [
         {
             "name": "aura/accept",
@@ -809,48 +809,6 @@
             "time": "2015-04-04 16:00:33"
         },
         {
-            "name": "ircmaxell/password-compat",
-            "version": "1.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ircmaxell/password_compat.git",
-                "reference": "9b99377557a33a4129c9194e60a97a685fab21e0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/9b99377557a33a4129c9194e60a97a685fab21e0",
-                "reference": "9b99377557a33a4129c9194e60a97a685fab21e0",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "lib/password.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthony Ferrara",
-                    "email": "ircmaxell@php.net",
-                    "homepage": "http://blog.ircmaxell.com"
-                }
-            ],
-            "description": "A compatibility library for the proposed simplified password hashing algorithm: https://wiki.php.net/rfc/password_hash",
-            "homepage": "https://github.com/ircmaxell/password_compat",
-            "keywords": [
-                "hashing",
-                "password"
-            ],
-            "time": "2014-11-20 19:18:42"
-        },
-        {
             "name": "league/booboo",
             "version": "1.0.0",
             "source": {
@@ -1024,17 +982,70 @@
             "time": "2015-10-10 00:01:47"
         },
         {
-            "name": "monolog/monolog",
+            "name": "modus/framework",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "cc145b85fe1d1093f0bfa2d1dffb341904a1762b"
+                "url": "https://github.com/modusphp/framework.git",
+                "reference": "efa22e132cff0b4dcbd05251557eef9698f5f372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/3d3feb167314024ba7b48aa67a88b18d3d748588",
-                "reference": "cc145b85fe1d1093f0bfa2d1dffb341904a1762b",
+                "url": "https://api.github.com/repos/modusphp/framework/zipball/efa22e132cff0b4dcbd05251557eef9698f5f372",
+                "reference": "efa22e132cff0b4dcbd05251557eef9698f5f372",
+                "shasum": ""
+            },
+            "require": {
+                "aura/accept": "~2.0",
+                "aura/auth": "2.0.0-beta2",
+                "aura/cli": "~2.0",
+                "aura/di": "~2.1",
+                "aura/html": "~2.1.0",
+                "aura/http": "~1.0.1",
+                "aura/payload": "3.0.0-alpha1",
+                "aura/router": "~2.0",
+                "aura/session": "~1.0.1",
+                "aura/sql": "~2.0",
+                "aura/sqlquery": "~2.0",
+                "aura/view": "~2.0.0",
+                "aura/web": "~2.0",
+                "league/booboo": "~1.0",
+                "league/flysystem": "~0.5",
+                "monolog/monolog": "~1.5",
+                "pagerfanta/pagerfanta": "v1.0.1",
+                "php": ">=5.5.0",
+                "robmorgan/phinx": "v0.3.2",
+                "zendframework/zend-escaper": "~2.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.0",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Modus\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The Modus framework, providing basic support for many components of Aura and other libraries.",
+            "time": "2015-10-10 01:03:50"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.17.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0524c87587ab85bc4c2d6f5b41253ccb930a5422",
+                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422",
                 "shasum": ""
             },
             "require": {
@@ -1051,7 +1062,7 @@
                 "php-console/php-console": "^3.1.3",
                 "phpunit/phpunit": "~4.5",
                 "phpunit/phpunit-mock-objects": "2.3.0",
-                "raven/raven": "~0.8",
+                "raven/raven": "~0.11",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "swiftmailer/swiftmailer": "~5.3",
                 "videlalvaro/php-amqplib": "~2.4"
@@ -1071,7 +1082,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14.x-dev"
+                    "dev-master": "1.16.x-dev"
                 }
             },
             "autoload": {
@@ -1097,7 +1108,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-06-22 17:09:57"
+            "time": "2015-08-31 09:17:37"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -1520,60 +1531,6 @@
             "time": "2015-06-19 15:09:14"
         },
         {
-            "name": "tailwindsllc/modus",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tailwindsllc/modus.git",
-                "reference": "f84e11e2f79690230049a1e3513a651e97501588"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tailwindsllc/modus/zipball/fa044bd9eb38384dd861e2f3954c1c1f4f4e0266",
-                "reference": "f84e11e2f79690230049a1e3513a651e97501588",
-                "shasum": ""
-            },
-            "require": {
-                "aura/accept": "~2.0",
-                "aura/auth": "2.0.0-beta2",
-                "aura/cli": "~2.0",
-                "aura/di": "~2.1",
-                "aura/html": "~2.1.0",
-                "aura/http": "~1.0.1",
-                "aura/payload": "3.0.0-alpha1",
-                "aura/router": "~2.0",
-                "aura/session": "~1.0.1",
-                "aura/sql": "~2.0",
-                "aura/sqlquery": "~2.0",
-                "aura/view": "~2.0.0",
-                "aura/web": "~2.0",
-                "ircmaxell/password-compat": "~1.0",
-                "league/booboo": "~1.0",
-                "league/flysystem": "~0.5",
-                "monolog/monolog": "~1.5",
-                "pagerfanta/pagerfanta": "v1.0.1",
-                "php": ">=5.5.0",
-                "robmorgan/phinx": "v0.3.2",
-                "zendframework/zend-escaper": "~2.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.0",
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Modus\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "The Modus framework, providing basic support for many components of Aura and other libraries.",
-            "time": "2015-06-27 14:17:16"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "dev-master",
             "source": {
@@ -1898,16 +1855,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "25b5b40e1a7b9f57e953a1830fa04c38f7655ade"
+                "reference": "14bb2da6387c6a58648b4a87ff02d4c971050309"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/25b5b40e1a7b9f57e953a1830fa04c38f7655ade",
-                "reference": "25b5b40e1a7b9f57e953a1830fa04c38f7655ade",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/14bb2da6387c6a58648b4a87ff02d4c971050309",
+                "reference": "14bb2da6387c6a58648b4a87ff02d4c971050309",
                 "shasum": ""
             },
             "require": {
@@ -1941,7 +1898,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2015-06-26 10:24:18"
+            "time": "2015-07-02 17:28:34"
         },
         {
             "name": "phpspec/prophecy",
@@ -1949,12 +1906,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "5a355f91730c845301a9e28f91c8a5053353c496"
+                "reference": "4f9b1eaf0a7da77c362f8d91cbc68ab1f4718d62"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4f9b1eaf0a7da77c362f8d91cbc68ab1f4718d62",
-                "reference": "5a355f91730c845301a9e28f91c8a5053353c496",
+                "reference": "4f9b1eaf0a7da77c362f8d91cbc68ab1f4718d62",
                 "shasum": ""
             },
             "require": {
@@ -1968,7 +1925,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
@@ -2001,7 +1958,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-05-20 16:00:43"
+            "time": "2015-09-22 14:49:23"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2376,12 +2333,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "abd05e77d364138c0532a1b78a13c4d78311f546"
+                "reference": "937efb279bd37a375bcadf584dec0726f84dbf22"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/937efb279bd37a375bcadf584dec0726f84dbf22",
-                "reference": "abd05e77d364138c0532a1b78a13c4d78311f546",
+                "reference": "937efb279bd37a375bcadf584dec0726f84dbf22",
                 "shasum": ""
             },
             "require": {
@@ -2395,7 +2352,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -2432,7 +2389,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2015-06-21 07:54:35"
+            "time": "2015-07-26 15:48:44"
         },
         {
             "name": "sebastian/diff",
@@ -2542,12 +2499,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "7ae5513327cb536431847bcc0c10edba2701064e"
+                "reference": "f88f8936517d54ae6d589166810877fb2015d0a2"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/f88f8936517d54ae6d589166810877fb2015d0a2",
-                "reference": "7ae5513327cb536431847bcc0c10edba2701064e",
+                "reference": "f88f8936517d54ae6d589166810877fb2015d0a2",
                 "shasum": ""
             },
             "require": {
@@ -2555,12 +2512,13 @@
                 "sebastian/recursion-context": "~1.0"
             },
             "require-dev": {
+                "ext-mbstring": "*",
                 "phpunit/phpunit": "~4.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -2600,11 +2558,11 @@
                 "export",
                 "exporter"
             ],
-            "time": "2015-06-21 07:55:53"
+            "time": "2015-08-09 04:23:41"
         },
         {
             "name": "sebastian/global-state",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
@@ -2847,7 +2805,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "tailwindsllc/modus": 20
+        "modus/framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

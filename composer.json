@@ -1,9 +1,9 @@
 {
-    "name": "tailwindsllc/modus-skeleton",
+    "name": "modus/skeleton",
     "description": "A skeleton project for the Modus framework.",
     "minimum-stability": "dev",
     "require": {
-        "tailwindsllc/modus": "dev-master",
+        "modus/framework": "dev-master",
         "modus/config": "~1.0"
     },
     "require-dev": {
