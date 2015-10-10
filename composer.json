@@ -25,5 +25,9 @@
         "psr-4": {
             "Example\\": "src/"
         }
+    },
+    "suggest": {
+        "thephpleague/flysystem": "Use Flysystem for file system manipulation",
+        "codeguy/Upload": "Use Upload for uploading files"
     }
 }
