@@ -22,59 +22,59 @@ class Auth extends Di\Config
          */
 
         // This is the adapter we need
-        $di->set('aura/auth:adapter', $di->lazyNew($config['authentication_adapter']));
+        $di->set('modus/auth:adapter', $di->lazyNew($config['authentication_adapter']));
 
-        $di->set('aura/auth:auth', $di->lazyNew('Aura\Auth\Auth'));
-        $di->set('aura/auth:login_service', $di->lazyNew('Aura\Auth\Service\LoginService'));
-        $di->set('aura/auth:logout_service', $di->lazyNew('Aura\Auth\Service\LogoutService'));
-        $di->set('aura/auth:resume_service', $di->lazyNew('Aura\Auth\Service\ResumeService'));
-        $di->set('aura/auth:session', $di->lazyNew('Aura\Auth\Session\Session'));
+        $di->set('modus/auth:auth', $di->lazyNew('Modus\Auth\Auth'));
+        $di->set('modus/auth:login_service', $di->lazyNew('Modus\Auth\Service\LoginService'));
+        $di->set('modus/auth:logout_service', $di->lazyNew('Modus\Auth\Service\LogoutService'));
+        $di->set('modus/auth:resume_service', $di->lazyNew('Modus\Auth\Service\ResumeService'));
+        $di->set('modus/auth:session', $di->lazyNew('Modus\Auth\Session\Session'));
 
         $di->params['Modus\Auth\Service'] = [
 
-            'loginService' => $di->lazyGet('aura/auth:login_service'),
-            'logoutService' => $di->lazyGet('aura/auth:logout_service'),
-            'resumeService' => $di->lazyGet('aura/auth:resume_service'),
-            'userObj' => $di->lazyGet('aura/auth:auth'),
+            'loginService' => $di->lazyGet('modus/auth:login_service'),
+            'logoutService' => $di->lazyGet('modus/auth:logout_service'),
+            'resumeService' => $di->lazyGet('modus/auth:resume_service'),
+            'userObj' => $di->lazyGet('modus/auth:auth'),
         ];
 
         /**
-         * Aura\Auth\Auth
+         * Modus\Auth\Auth
          */
-        $di->params['Aura\Auth\Auth'] = array(
-            'segment' => $di->lazyNew('Aura\Auth\Session\Segment')
+        $di->params['Modus\Auth\Auth'] = array(
+            'segment' => $di->lazyNew('Modus\Auth\Session\Segment')
         );
 
         /**
-         * Aura\Auth\Service\LoginService
+         * Modus\Auth\Service\LoginService
          */
-        $di->params['Aura\Auth\Service\LoginService'] = array(
-            'adapter' => $di->lazyGet('aura/auth:adapter'),
-            'session' => $di->lazyGet('aura/auth:session')
+        $di->params['Modus\Auth\Service\LoginService'] = array(
+            'adapter' => $di->lazyGet('modus/auth:adapter'),
+            'session' => $di->lazyGet('modus/auth:session')
         );
 
         /**
-         * Aura\Auth\Service\LogoutService
+         * Modus\Auth\Service\LogoutService
          */
-        $di->params['Aura\Auth\Service\LogoutService'] = array(
-            'adapter' => $di->lazyGet('aura/auth:adapter'),
-            'session' => $di->lazyGet('aura/auth:session')
+        $di->params['Modus\Auth\Service\LogoutService'] = array(
+            'adapter' => $di->lazyGet('modus/auth:adapter'),
+            'session' => $di->lazyGet('modus/auth:session')
         );
 
         /**
-         * Aura\Auth\Service\ResumeService
+         * Modus\Auth\Service\ResumeService
          */
-        $di->params['Aura\Auth\Service\ResumeService'] = array(
-            'adapter' => $di->lazyGet('aura/auth:adapter'),
-            'session' => $di->lazyGet('aura/auth:session'),
-            'timer' => $di->lazyNew('Aura\Auth\Session\Timer'),
-            'logout_service' => $di->lazyGet('aura/auth:logout_service'),
+        $di->params['Modus\Auth\Service\ResumeService'] = array(
+            'adapter' => $di->lazyGet('modus/auth:adapter'),
+            'session' => $di->lazyGet('modus/auth:session'),
+            'timer' => $di->lazyNew('Modus\Auth\Session\Timer'),
+            'logout_service' => $di->lazyGet('modus/auth:logout_service'),
         );
 
         /**
-         * Aura\Auth\Session\Timer
+         * Modus\Auth\Session\Timer
          */
-        $di->params['Aura\Auth\Session\Timer'] = array(
+        $di->params['Modus\Auth\Session\Timer'] = array(
             'ini_gc_maxliftime' => ini_get('session.gc_maxlifetime'),
             'ini_cookie_liftime' => ini_get('session.cookie_lifetime'),
             'idle_ttl' => 1440,
@@ -82,16 +82,16 @@ class Auth extends Di\Config
         );
 
         /**
-         * Aura\Auth\Session\Session
+         * Modus\Auth\Session\Session
          */
-        $di->params['Aura\Auth\Session\Session'] = array(
+        $di->params['Modus\Auth\Session\Session'] = array(
             'cookie' => $_COOKIE,
         );
 
         /**
-         * Aura\Auth\Verifier\PasswordVerifier
+         * Modus\Auth\Verifier\PasswordVerifier
          */
-        $di->params['Aura\Auth\Verifier\PasswordVerifier'] = array(
+        $di->params['Modus\Auth\Verifier\PasswordVerifier'] = array(
             'algo' => 'NO_ALGO_SPECIFIED',
         );
 

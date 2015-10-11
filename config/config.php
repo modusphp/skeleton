@@ -150,9 +150,9 @@ return array(
      * Authentication Settings
      * --------------------------------------------------
      */
-    'authentication_adapter' => 'Aura\Auth\Adapter\HtpasswdAdapter',
+    'authentication_adapter' => 'Modus\Auth\Adapter\HtpasswdAdapter',
     'authentication_settings' => [
         'file' => '',
-        'verifier' => 'Aura\Auth\Verifier\HtpasswdVerifier'
+        'verifier' => 'Modus\Auth\Verifier\HtpasswdVerifier'
     ]
 );
