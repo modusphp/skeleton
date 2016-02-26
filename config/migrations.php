@@ -11,7 +11,7 @@ require($rootPath . '/vendor/autoload.php');
 $dotenv = new \Dotenv\Dotenv($rootPath . '/config');
 $dotenv->load();
 
-$configuration = new Modus\Config\Config($_ENV['PHINX_ENV'], $rootPath . '/config', $dotenv);
+$configuration = new Modus\Config\Config($_ENV['PHINX_ENV'], $rootPath . '/config');
 
 $config = $configuration->getConfig();
 
