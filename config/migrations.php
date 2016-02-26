@@ -8,14 +8,10 @@ $rootPath = realpath(__DIR__ . '/..');
 
 require($rootPath . '/vendor/autoload.php');
 
-if (isset($_SERVER['PHINX_ENV'])) {
-    $env = $_SERVER['PHINX_ENV'];
-} else {
-    $env = 'dev';
-    trigger_error('Phinx migration environment not set', E_USER_WARNING);
-}
+$dotenv = new \Dotenv\Dotenv($rootPath . '/config');
+$dotenv->load();
 
-$configuration = new Modus\Config\Config($env, $rootPath . '/config', new Aura\Di\ContainerBuilder());
+$configuration = new Modus\Config\Config($_ENV['PHINX_ENV'], $rootPath . '/config', $dotenv);
 
 $config = $configuration->getConfig();
 
