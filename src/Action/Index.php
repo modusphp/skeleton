@@ -6,7 +6,7 @@ use Aura\Payload\Payload;
 
 class Index
 {
-    public function index()
+    public function __invoke()
     {
         $payload = new Payload();
         $payload->setOutput(['statement' => 'Modus Framework']);

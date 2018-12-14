@@ -27,7 +27,7 @@ return array(
         'some_route' => [
             'path' => '/',
             'values' => [
-                'action' => 'Example\Action\Index:index',
+                'action' => 'Example\Action\Index',
                 'responder' => 'Example\Responder\Index',
             ],
             'request' => 'GET'
