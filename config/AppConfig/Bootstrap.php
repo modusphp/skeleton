@@ -19,7 +19,6 @@ class Bootstrap extends Di\Config
         $di->params['Modus\Application\Bootstrap'] = array(
             'config' => $di->lazyGet('config'),
             'di' => $di,
-            'authService' => $di->lazyNew('Modus\Auth\Service'),
             'router' => $di->lazyNew('Modus\Route\Manager'),
             'handler' => $di->lazyNew('Modus\ErrorLogging\Manager'),
             'responseManager' => $di->lazyNew('Modus\Response\ResponseManager'),
