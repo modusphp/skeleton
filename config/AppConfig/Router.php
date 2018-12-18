@@ -4,37 +4,23 @@ namespace AppConfig;
 
 use Aura\Di\Config;
 use Aura\Di\Container;
+use Aura\Router\RouterContainer;
+use Modus\Route\Manager;
 
 class Router extends Config
 {
 
     public function define(Container $di)
     {
-        /**
-         * Aura\Router\Map
-         */
-        $di->params['Aura\Router\Router'] = [
-            'routes' => $di->lazyNew('Aura\Router\RouteCollection'),
-            'generator' => $di->lazyNew('Aura\Router\Generator'),
-        ];
-
-        $di->params['Aura\Router\RouteCollection'] = [
-            'route_factory' => $di->lazyNew('Aura\Router\RouteFactory'),
+        $di->params[Manager::class] = [
+            'container' => $di->lazyNew(RouterContainer::class)
         ];
 
         $config = $di->get('config');
         $config = $config->getConfig();
 
+        $di->setters[Manager::class]['loadRoutes'] = require($config['root_path'] . '/config/routes.php');
 
-
-        $di->params['Modus\Router\RouteManager'] = [
-            'router' => $di->lazyNew('Aura\Router\Router'),
-            'routes' => require($config['root_path'] . '/config/routes.php'),
-            'serverVars' => $_SERVER,
-            'routeAuthServices' => [
-                'default' => $di->newInstance('Modus\Auth\Router\StandardAuth'),
-            ]
-        ];
 
     }
 }

@@ -3,7 +3,7 @@
     "description": "A skeleton project for the Modus framework.",
     "minimum-stability": "dev",
     "require": {
-        "modus/framework": "dev-master"
+        "modus/framework": "dev-router"
     },
     "require-dev": {
         "symfony/var-dumper": "2.6.3"

@@ -133,8 +133,8 @@ return array(
      */
     'config_classes' => [
         'AppConfig\Auth',
-        'AppConfig\Bootstrap',
         'AppConfig\Router',
+        'AppConfig\Bootstrap',
         'AppConfig\Database',
         'AppConfig\AuraWeb',
         'AppConfig\HtmlHelpers',

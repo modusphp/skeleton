@@ -1,40 +1,30 @@
 <?php
 
-/**
- *
- * Example:
- *
- * 'some_route' => [
- *          'path' => '/a/b/{c}{format}',
- *          'values' => [
- *              'action' => 'Application\Controller\Index',
- *              'responder' => 'Application\Responder\Index',
- *              'method' => 'index',
- *              'format' => 'html' // a default param value for format
- *      ],
- *      'params' => ['c' => '\d+', 'format' => '(\.[^/]+)?',],
- *      'secure' => false,
- *      'request' => 'GET|POST'
- * ],
- **/
+use Modus\Route\Manager as Route;
+
+//    You can refer to the documentation found at
+//    https://github.com/auraphp/Aura.Router/blob/3.x/docs/index.md for more on how to configure these
+//    routes.
+//
+//    Routes returned are simple Aura.Router Route objects.
+//
+//    Example:
+//
+//    Route::route('example_route', '/a/b/{c}')
+//        ->extras([
+//            'action' => 'Application\Controller\Index',
+//            'responder' => 'Application\Responder\Index',
+//        ])
+//        ->tokens(['c' => '\d+'])
+//        ->secure(false)
+//        ->allows(['GET', 'POST'])
+
+
+
 return array(
 
-    'metadata' => [
-
-    ],
-
-    'routes' => [
-        'some_route' => [
-            'path' => '/',
-            'values' => [
-                'action' => 'Example\Action\Index',
-                'responder' => 'Example\Responder\Index',
-            ],
-            'request' => 'GET'
-        ],
-    ],
-
-
-    'route_groups' => [
-    ],
+    Route::route('some_route', '/')
+        ->extras(['action' => 'Example\Action\Index', 'responder' => 'Example\Responder\Index'])
+        ->secure(false)
+        ->allows(['GET']),
 );

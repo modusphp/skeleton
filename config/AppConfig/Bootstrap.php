@@ -3,6 +3,8 @@
 namespace AppConfig;
 
 use Aura\Di;
+use Zend\Diactoros\ServerRequest;
+use Zend\Diactoros\ServerRequestFactory;
 
 /**
  * Set up the setters and other parameters passed into actions.
@@ -18,9 +20,10 @@ class Bootstrap extends Di\Config
             'config' => $di->lazyGet('config'),
             'di' => $di,
             'authService' => $di->lazyNew('Modus\Auth\Service'),
-            'router' => $di->lazyNew('Modus\Router\RouteManager'),
+            'router' => $di->lazyNew('Modus\Route\Manager'),
             'handler' => $di->lazyNew('Modus\ErrorLogging\Manager'),
             'responseManager' => $di->lazyNew('Modus\Response\ResponseManager'),
+            'serverRequest' => ServerRequestFactory::fromGlobals(),
         );
     }
 }
