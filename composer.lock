@@ -131,12 +131,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Di.git",
-                "reference": "81d5d9c602ca292a16e32001dcbd2adab5350e28"
+                "reference": "e485b235d4c3841a7e8959158ac7e69f425a52c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/81d5d9c602ca292a16e32001dcbd2adab5350e28",
-                "reference": "81d5d9c602ca292a16e32001dcbd2adab5350e28",
+                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/e485b235d4c3841a7e8959158ac7e69f425a52c5",
+                "reference": "e485b235d4c3841a7e8959158ac7e69f425a52c5",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +172,7 @@
                 "di",
                 "di container"
             ],
-            "time": "2016-01-21T09:34:53+00:00"
+            "time": "2018-12-24T14:20:59+00:00"
         },
         {
             "name": "aura/html",
@@ -798,12 +798,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/modusphp/framework.git",
-                "reference": "5f7718cdf193b8d4697697eb1e35c3130ccc1b03"
+                "reference": "c7049855110bca2ad9d7eeea8fb639e683b72297"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/modusphp/framework/zipball/5f7718cdf193b8d4697697eb1e35c3130ccc1b03",
-                "reference": "5f7718cdf193b8d4697697eb1e35c3130ccc1b03",
+                "url": "https://api.github.com/repos/modusphp/framework/zipball/c7049855110bca2ad9d7eeea8fb639e683b72297",
+                "reference": "c7049855110bca2ad9d7eeea8fb639e683b72297",
                 "shasum": ""
             },
             "require": {
@@ -840,7 +840,7 @@
                 "MIT"
             ],
             "description": "The Modus framework, providing basic support for many components of Aura and other libraries.",
-            "time": "2018-12-17T20:31:41+00:00"
+            "time": "2018-12-18T16:06:40+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1186,12 +1186,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "f2da9613b8349045adb1c9cbdfd27409a3b60c3c"
+                "reference": "876684cc8fba660aa58b43fcd2b99860a9d4a517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/f2da9613b8349045adb1c9cbdfd27409a3b60c3c",
-                "reference": "f2da9613b8349045adb1c9cbdfd27409a3b60c3c",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/876684cc8fba660aa58b43fcd2b99860a9d4a517",
+                "reference": "876684cc8fba660aa58b43fcd2b99860a9d4a517",
                 "shasum": ""
             },
             "require": {
@@ -1214,8 +1214,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev",
-                    "dev-develop": "2.1.x-dev",
+                    "dev-master": "2.1.x-dev",
+                    "dev-develop": "2.2.x-dev",
                     "dev-release-1.8": "1.8.x-dev"
                 }
             },
@@ -1244,7 +1244,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-12-13T16:16:57+00:00"
+            "time": "2018-12-20T16:58:26+00:00"
         }
     ],
     "packages-dev": [
