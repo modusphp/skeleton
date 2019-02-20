@@ -19,7 +19,7 @@ class ErrorHandler extends Config
 
 
         $di->params['Modus\ErrorLogging\Manager'] = [
-            'runner' => $di->lazyNew('League\BooBoo\Runner'),
+            'runner' => $di->lazyNew('League\BooBoo\BooBoo'),
             'accept' => $di->lazyNew('Aura\Accept\Accept'),
             'loggers' => ['error' => $di->get('error'), 'event' => $di->get('event')],
             'availableFormatters' => $this->formatters,
@@ -63,13 +63,13 @@ class ErrorHandler extends Config
         $default[] = $di->newInstance($config['default_formatter']);
 
         // Set up the BooBoo configuration parameters.
-        $di->params['League\BooBoo\Runner'] = [
+        $di->params['League\BooBoo\BooBoo'] = [
             'formatters' => $default,
             'handlers' => $handlers,
         ];
 
         if(isset($config['error_page_formatter'])) {
-            $di->setter['League\BooBoo\Runner']['setErrorPageFormatter'] =
+            $di->setter['League\BooBoo\BooBoo']['setErrorPageFormatter'] =
                 $di->lazyNew($config['error_page_formatter']);
         }
 
@@ -78,7 +78,7 @@ class ErrorHandler extends Config
         }
 
         if($config['silence_errors']) {
-            $di->setter['League\BooBoo\Runner']['silenceAllErrors'] = true;
+            $di->setter['League\BooBoo\BooBoo']['silenceAllErrors'] = true;
         }
     }
 }

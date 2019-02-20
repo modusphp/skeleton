@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ded382678d228f65a7ff81349e57a164",
+    "content-hash": "a2d0cdf7ca35ec87278bf82e2a437d8b",
     "packages": [
         {
             "name": "aura/accept",
@@ -709,29 +709,29 @@
         },
         {
             "name": "league/booboo",
-            "version": "1.0.0",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/booboo.git",
-                "reference": "50008c980c5f710599705cb6758723588e875133"
+                "reference": "bf6a7ba3b3cb59cf1acec1e8671474bde5ffe326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/booboo/zipball/50008c980c5f710599705cb6758723588e875133",
-                "reference": "50008c980c5f710599705cb6758723588e875133",
+                "url": "https://api.github.com/repos/thephpleague/booboo/zipball/bf6a7ba3b3cb59cf1acec1e8671474bde5ffe326",
+                "reference": "bf6a7ba3b3cb59cf1acec1e8671474bde5ffe326",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
+                "php": ">=5.6.0",
                 "psr/log": "~1.0"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.3",
-                "raven/raven": "0.10.0"
+                "phpunit/phpunit": "~5.7",
+                "sentry/sentry": "~1.7"
             },
             "suggest": {
-                "raven/raven": "Use Raven for passing errors to Sentry."
+                "sentry/sentry": "Use Sentry for passing errors to Sentry."
             },
             "type": "library",
             "autoload": {
@@ -750,7 +750,7 @@
                 }
             ],
             "description": "Provides an error handler for PHP that can execute a stack of handlers for various purposes.",
-            "time": "2015-02-25T19:12:30+00:00"
+            "time": "2017-09-01T17:05:28+00:00"
         },
         {
             "name": "modus/config",
@@ -794,16 +794,16 @@
         },
         {
             "name": "modus/framework",
-            "version": "dev-router",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/modusphp/framework.git",
-                "reference": "c7049855110bca2ad9d7eeea8fb639e683b72297"
+                "reference": "47be313ddb22369d711a342bba792dadafa23c3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/modusphp/framework/zipball/c7049855110bca2ad9d7eeea8fb639e683b72297",
-                "reference": "c7049855110bca2ad9d7eeea8fb639e683b72297",
+                "url": "https://api.github.com/repos/modusphp/framework/zipball/47be313ddb22369d711a342bba792dadafa23c3f",
+                "reference": "47be313ddb22369d711a342bba792dadafa23c3f",
                 "shasum": ""
             },
             "require": {
@@ -818,7 +818,7 @@
                 "aura/sqlquery": "~2.0",
                 "aura/view": "~2.0.0",
                 "aura/web": "~2.0",
-                "league/booboo": "~1.0",
+                "league/booboo": "~2.0",
                 "modus/config": "~1.0",
                 "monolog/monolog": "~1.5",
                 "pagerfanta/pagerfanta": "v1.0.1",
@@ -840,7 +840,7 @@
                 "MIT"
             ],
             "description": "The Modus framework, providing basic support for many components of Aura and other libraries.",
-            "time": "2018-12-18T16:06:40+00:00"
+            "time": "2019-02-20T16:16:52+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -848,12 +848,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "68f536105f1e4fe439ccabac105bb1c90dee8b92"
+                "reference": "4d5b7e6ba1127789c7ff59d6f762298eaa29787f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/68f536105f1e4fe439ccabac105bb1c90dee8b92",
-                "reference": "68f536105f1e4fe439ccabac105bb1c90dee8b92",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4d5b7e6ba1127789c7ff59d6f762298eaa29787f",
+                "reference": "4d5b7e6ba1127789c7ff59d6f762298eaa29787f",
                 "shasum": ""
             },
             "require": {
@@ -918,7 +918,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2018-12-11T10:11:11+00:00"
+            "time": "2018-12-26T14:24:03+00:00"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -1131,21 +1131,80 @@
             "time": "2018-11-21T13:42:00+00:00"
         },
         {
-            "name": "vlucas/phpdotenv",
+            "name": "symfony/polyfill-ctype",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36"
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "82ebae02209c21113908c229e9883c419720738a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/cfd5dc225767ca154853752abc93aeec040fcf36",
-                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
+                "reference": "82ebae02209c21113908c229e9883c419720738a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.11-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2019-02-06T07:57:58+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "2.6.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.0"
@@ -1153,7 +1212,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -1178,7 +1237,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-10-30T17:29:25+00:00"
+            "time": "2019-01-29T11:11:52+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -1186,12 +1245,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "876684cc8fba660aa58b43fcd2b99860a9d4a517"
+                "reference": "c602e2451c5cf3873c4e7eddda3d912c9bd24629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/876684cc8fba660aa58b43fcd2b99860a9d4a517",
-                "reference": "876684cc8fba660aa58b43fcd2b99860a9d4a517",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/c602e2451c5cf3873c4e7eddda3d912c9bd24629",
+                "reference": "c602e2451c5cf3873c4e7eddda3d912c9bd24629",
                 "shasum": ""
             },
             "require": {
@@ -1244,7 +1303,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-12-20T16:58:26+00:00"
+            "time": "2019-01-05T20:22:53+00:00"
         }
     ],
     "packages-dev": [
