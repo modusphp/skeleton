@@ -10,10 +10,8 @@ use Modus\Response\Interfaces\HtmlGenerator;
 class Index implements HtmlGenerator
 {
     public function __construct(
-        Response $response,
         View $template
     ) {
-        $this->response = $response;
         $this->template = $template;
     }
 
@@ -30,7 +28,7 @@ class Index implements HtmlGenerator
         $this->template->setView('index');
         $this->template->setData($payload->getOutput());
 
-        $this->response->setContent($this->template->__invoke());
-        return $this->response;
+        $response = new \Zend\Diactoros\Response\HtmlResponse($this->template->__invoke());
+        return $response;
     }
 }
