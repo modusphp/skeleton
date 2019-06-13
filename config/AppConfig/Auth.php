@@ -3,6 +3,9 @@
 namespace AppConfig;
 
 use Aura\Di;
+use Modus\Auth\AuthDriver;
+use Modus\Auth\Driver\StandardAuth;
+use Modus\Route\Manager;
 
 /**
  * Set up the setters and other parameters passed into actions.
@@ -98,6 +101,19 @@ class Auth extends Di\Config
         $di->params['Modus\Auth\Router\StandardAuth'] = [
             'authService' => $di->lazyNew('Modus\Auth\Service')
         ];
+
+        $di->params[StandardAuth::class] = [
+            'authService' => $di->lazyNew('Modus\Auth\Service'),
+            'redirectRoute' => Manager::route('login', '/'),
+        ];
+
+        $di->set(AuthDriver::class, function () use ($di) {
+            $drivers = [
+                $di->newInstance(StandardAuth::class),
+            ];
+
+            return new AuthDriver($drivers, $di->newInstance(StandardAuth::class));
+        });
 
         /**
          * Configure adapter from config

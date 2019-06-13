@@ -3,6 +3,7 @@
 namespace AppConfig;
 
 use Aura\Di;
+use Modus\Auth\AuthDriver;
 use Zend\Diactoros\ServerRequest;
 use Zend\Diactoros\ServerRequestFactory;
 
@@ -23,6 +24,7 @@ class Bootstrap extends Di\Config
             'handler' => $di->lazyNew('Modus\ErrorLogging\Manager'),
             'responseManager' => $di->lazyNew('Modus\Response\ResponseManager'),
             'serverRequest' => ServerRequestFactory::fromGlobals(),
+            'authDriver' => $di->lazyGet(AuthDriver::class),
         );
     }
 }

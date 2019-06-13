@@ -745,12 +745,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/modusphp/framework.git",
-                "reference": "9d041a2de97b1736702bf75c0f5e9d1c69366746"
+                "reference": "891787f8194f4ba23be8ab4e190aa0007938f030"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/modusphp/framework/zipball/9d041a2de97b1736702bf75c0f5e9d1c69366746",
-                "reference": "9d041a2de97b1736702bf75c0f5e9d1c69366746",
+                "url": "https://api.github.com/repos/modusphp/framework/zipball/891787f8194f4ba23be8ab4e190aa0007938f030",
+                "reference": "891787f8194f4ba23be8ab4e190aa0007938f030",
                 "shasum": ""
             },
             "require": {
@@ -787,7 +787,7 @@
                 "MIT"
             ],
             "description": "The Modus framework, providing basic support for many components of Aura and other libraries.",
-            "time": "2019-02-20T18:47:19+00:00"
+            "time": "2019-06-12T19:48:28+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -934,12 +934,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-factory.git",
-                "reference": "80cb5bda4af59df6264b9aaa66fa6155d82c704b"
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/80cb5bda4af59df6264b9aaa66fa6155d82c704b",
-                "reference": "80cb5bda4af59df6264b9aaa66fa6155d82c704b",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
                 "shasum": ""
             },
             "require": {
@@ -978,7 +978,7 @@
                 "request",
                 "response"
             ],
-            "time": "2018-11-01T15:41:32+00:00"
+            "time": "2019-04-30T12:38:16+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1036,12 +1036,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-server-handler.git",
-                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7"
+                "reference": "f981eec4f9870ace3ee8ada18c88a59461080cba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
-                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/f981eec4f9870ace3ee8ada18c88a59461080cba",
+                "reference": "f981eec4f9870ace3ee8ada18c88a59461080cba",
                 "shasum": ""
             },
             "require": {
@@ -1081,7 +1081,7 @@
                 "response",
                 "server"
             ],
-            "time": "2018-10-30T16:46:14+00:00"
+            "time": "2019-06-07T16:00:12+00:00"
         },
         {
             "name": "psr/log",
@@ -1245,12 +1245,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "c602e2451c5cf3873c4e7eddda3d912c9bd24629"
+                "reference": "47b15b38b00426f0d96e11a24ea9b7684e9279c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/c602e2451c5cf3873c4e7eddda3d912c9bd24629",
-                "reference": "c602e2451c5cf3873c4e7eddda3d912c9bd24629",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/47b15b38b00426f0d96e11a24ea9b7684e9279c8",
+                "reference": "47b15b38b00426f0d96e11a24ea9b7684e9279c8",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2019-01-05T20:22:53+00:00"
+            "time": "2019-04-29T21:12:56+00:00"
         },
         {
             "name": "zendframework/zend-httphandlerrunner",

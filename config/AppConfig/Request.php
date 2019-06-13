@@ -8,8 +8,6 @@ use Zend\Diactoros\ServerRequestFactory;
 /**
  * Set up the setters and other parameters passed into actions.
  *
- * Class Action
- * @package AppConfig\ADR
  */
 class Request extends Di\Config
 {
